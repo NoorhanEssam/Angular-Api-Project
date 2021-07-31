@@ -1,0 +1,29 @@
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col"  *ngFor="let item of services.publishers">
+        <div class="flip-card" >
+            <div class="flip-card-inner">
+                <div class="card h-100">
+                    <img src="http://localhost:4544/uploads/{{item.imagePath}}" class="card-img-top img"width="150" height="209"  alt="دار ارفاء للنشر">
+
+                    <div class="card-body">
+                            <h5 class="card-title">{{item.name}}</h5>
+                            <h6><a href="{{item.webSite}}" title="{{item.name}}"></a></h6>
+                            <h5 class="card-title">{{item.phone}}</h5>
+                        <p class="card-footer pub ">{{item.address}}<br><a  href="{{item.webSite}}">{{item.webSite}}</a></p>
+                    </div>
+                   
+                </div>
+            </div>
+            </div>
+    </div>
+</div>   
+    <nav>
+        <ul class="pagination justify-content-center px-0 my-5 text-center rtl">
+            <li class="page-item active"><a class="page-link rounded-circle ml-1">1</a></li>
+            <li class="page-item"><a class="page-link rounded-circle ml-1" href="/page2">2</a></li>
+            <li class="page-item"><a class="page-link rounded-circle ml-1" href="/page3">3</a></li>
+        </ul>
+    </nav>
+  
+    

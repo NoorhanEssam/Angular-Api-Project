@@ -1,0 +1,23 @@
+
+
+<span class="card " *ngFor="let item of services.Quotes" style="  background-color: rgb(248, 235, 184); margin-bottom: 25px;font-size: 20px; font-family: 'Courier New', Courier, monospace;" >
+    <div class="card-body">
+        <i class="fa fa-quote-left fa-flip-horizontal">
+
+        </i>&nbsp;&nbsp;
+        <span style="display: inline;">
+            {{item. quotes}}
+        </span>&nbsp;&nbsp;
+        <i class="fa fa-quote-right fa-flip-horizontal">
+
+        </i>
+    </div>
+    <div class="card-footer ">
+        <div class="quote_bottom_btns"><a href="/u/myriam-naddaf/quotes" class="quote_adder pull-left"><img
+                    class="img-circle" height="25" width="25" src="https://www.nourbook.com/publice/images/female.svg">
+                    {{item.fullName}}</a>
+            <i class="fa fa-book"> {{item.bookId}}</i>
+            &nbsp;&nbsp;<span></span>
+        </div>
+    </div>
+</span>
