@@ -1,0 +1,53 @@
+
+
+
+<nav class="navbar navbar-expand-lg  " style="background-color: #272727; ">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+       
+      
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <img src="assets/images/logo.svg" alt="" width="40" height="40">
+          </li>
+          <li class="nav-item fontNav">
+            <a class="nav-link  active" aria-current="page" href="#">الرئيسية</a>
+          </li>
+          <li class="nav-item fontNav">
+            <a class="nav-link " href="/books">الكتب</a>
+          </li>
+          <li class="nav-item fontNav">
+            <a class="nav-link " href="/Author">مؤلفون</a>
+          </li>
+          <li class="nav-item fontNav">
+            <a class="nav-link" routerLink="quotes">مقتطفات</a>
+          </li>
+          <li class="nav-item fontNav">
+            <a class="nav-link" routerLink="publisherlist">ناشرون</a>
+          </li>
+          <li class="nav-item fontNav">
+            <a class="nav-link" routerLink="createBook">أضف كتاب</a>
+          </li>
+          <li class="nav-item fontNav">
+            <a class="nav-link" href="/register">تسجيل</a>
+          </li>
+          <li class="nav-item fontNav">
+            <a class="nav-link" href="/login">دخول</a>
+          </li>
+          <li class="nav-item fontNav">
+            <!-- (click)="onLogout()" -->
+            <button class="btn btn-outline-primary my-2 my-sm-0" >خروج</button>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" [(ngModel)]="title" name="title" id="title" type="search" placeholder="أبحث عن كتاب" aria-label="Search">
+          <button class="btn btn-outline-primary" (click)="Search(title)" type="submit" routerLink="searchBook">بحث</button>
+        </form>
+      </div>
+    </div>
+  </nav>

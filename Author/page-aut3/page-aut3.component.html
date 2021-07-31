@@ -1,0 +1,34 @@
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 ">
+        <div class="col" *ngFor="let item of services.authors">
+        <div class="flip-card" >
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="http://localhost:4544/uploads/{{item.imagePath}}" class="card-img-top img" alt="...">
+                
+            </div>
+            <div class="flip-card-back">
+                <h5 class="card-title aut">{{item.fullName}}</h5>
+                <p class="card-text aut">{{item.emial}}</p>
+                <div class="w3hubs-icon">
+                    <ul style="    list-style-type: none;">
+                        <li ><a href="#" target="black"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" target="black"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" target="black"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+             
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        <nav>
+            <ul class="pagination justify-content-center px-0 my-5 text-center rtl">
+                <li class="page-item active"><a class="page-link rounded-circle ml-1">1</a></li>
+                <li class="page-item"><a class="page-link rounded-circle ml-1" href="/pageA1">2</a></li>
+                <li class="page-item"><a class="page-link rounded-circle ml-1" href="/pageA3">3</a></li>
+                <li class="page-item"><a class="page-link rounded-circle ml-1" href="/pageA4">4</a></li>
+           </ul>
+        </nav>
+        
